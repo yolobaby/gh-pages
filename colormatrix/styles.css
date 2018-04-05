@@ -1,13 +1,242 @@
 body {font-family:helvetica Neue;font-weight: 50;
 line-height: 1.6em color: #454545;}
-h1 {font-family:helvetica Neue;font-weight:50;}
-h2 {font-family:helvetica Neue;font-weight:50;}
+h1 {font-weight:50; margin-top: 2px;
+  width: 450px;
+  margin: auto;
+  font-size: 12;
+  }
+h3 {
+    opacity: 1;
+    display: block;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    /*vertical-align: middle;*/
+    margin: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    /*top: 200px;*/
+    position: relative;
+    font-family:helvetica Neue;
+  }
+  font-size: 14;}
+h2 {font-family:helvetica Neue;font-weight:50;align-items: left}
 ul {font-size: 14px}
 a{color: #454545;helvetica Neue;}
 
-header h1 {margin:0;display: inline-block;}
 
-nav ul li {display: inline-block; list-style-type: none; padding: 2px 10px 0px 150px}
+
+nav ul li {display: inline-block; list-style-type: none; padding: 20px 40px 2px 0px;align-items: left}
 
 
 p {padding:0px 150px 30px 180px}
+
+.app
+{
+  width: 360px;
+
+}
+p.pa {
+  color: rgba(80,80,80,100);
+  font-family:helvetica Neue;
+  text-align: left;
+  /*vertical-align: middle;*/
+  width: 450px;
+  text-indent: 50px;
+  position: relative;
+  /*top: 180px;*/
+  margin: auto;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #ffa3e6;
+    color: white;
+}
+
+
+
+
+
+mark {
+    background-color: rgba(230,230,230,0);
+    color: white;
+}
+
+hr {
+    display: block;
+    color: #787878;
+    margin-top: 100px;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    height: 30px;
+    width: 85%;
+  	border-style: solid;
+  	border-color: #8c8b8b;
+  	border-width: 1px 0 0 0;
+  	border-radius: 20px;
+}
+
+
+div#color {
+  margin: auto;
+  display: flex;
+  /*top: 250px;*/
+  position: relative;
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+  margin-bottom: 10px;
+
+  /* This centers our sketch vertically. */
+  /*align-items: center;*/
+}
+
+
+
+div#neighborhood {
+  margin: auto;
+  display: flex;
+  /*top: 280px;*/
+  position: relative;
+  /*width: 80%;*/
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+  z-index: 1000;
+  margin-bottom: 10px;
+  /* This centers our sketch vertically. */
+  /*align-items: center;*/
+  align-items: center;
+}
+
+div#lot {
+  margin: auto;
+  display: flex;
+  /*top: 400px;*/
+  position: relative;
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+  z-index: 1000;
+  margin-bottom: 10px;
+  /* This centers our sketch vertically. */
+  /*align-items: center;*/
+  align-items: center;
+}
+
+div#button {
+  font-family:helvetica Neue;
+  margin: auto;
+  display: flex;
+  /*top: 280px;*/
+  position: relative;
+  /*width: 80%;*/
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+  z-index: 1000;
+  margin-bottom: 10px;
+  /* This centers our sketch vertically. */
+  /*align-items: center;*/
+  align-items: center;
+}
+
+div#weather {
+  font-family:helvetica Neue;
+  margin: auto;
+  display: flex;
+  /*top: 280px;*/
+  position: relative;
+  /*width: 80%;*/
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+  z-index: 1000;
+  margin-bottom: 10px;
+  /* This centers our sketch vertically. */
+  /*align-items: center;*/
+  align-items: center;
+}
+
+input#city {
+  font-family:helvetica Neue;
+  width: 388px;
+  height: 50px;
+  border-width: 3px;
+/*  border-right-width: 3px;
+  border-top-width: 3px;
+  border-bottom-width: 3px;*/
+  /*border: 20px;*/
+  border-color: #f9c2eb;
+  margin-right: 5px;
+  border-style: solid;
+  font-size: 25px;
+  font-weight: bolder;
+  color: #f9a9e4;
+}
+
+button#submit {
+    font-family:helvetica Neue;
+    background-color: #f9a9e4;
+    border: none;
+    color: black;
+    padding: 12px 107px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+/* weather section */
+.weather {
+	border:1px solid white;
+	margin-top: 10rem;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 20px;
+	color: white;
+}
+
+.weather-head {
+	height: 50%;
+}
+
+#icon-desc {
+	font-size: 5rem;
+	padding-top: 2rem;
+}
+
+.humidity, .wind, .visibility {
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	font-size: 1.5rem;
+
+}
+
+#description {
+	font-size: 2rem;
+}
+
+#temperature {
+	font-size: 7rem;
+}
+
+#icon-thermometer {
+	font-size: 5rem;
+}
+
+#humidity, #wind, #visibility {
+	font-size: 2rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
