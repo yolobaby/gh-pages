@@ -1,13 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+
   <head>
-    <title>Kate Wang</title>
-    <!-- bootstrap -->
-  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-  	<!-- fontawesome -->
-  	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  	<!-- weather icons -->
-  	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+  <title>Kate Wang</title>
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <!-- Google fonts code -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+  <!-- Link to the p5.js library -->
+  <script language="javascript" type="text/javascript" src="js/p5.js"></script>
+  <P><script language="javascript" type="text/javascript" src="js/p5.dom.js"></script></P>
+  <!-- Link to p5 sketch file -->
+  <script language="javascript" type="text/javascript" src="js/sketch.js"></script>
+
+    <link rel="stylesheet" href="css/style.css"/>
+
+
+  </head>
+  <body bgcolor='white'>
+
 
     <nav>
 
@@ -35,84 +45,13 @@
     </nav>
     </header>
 
-  </svg>
-  </nav>
-  </header>
-  <!-- weather icons -->
-
-   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons-wind.css"
-
-
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-
-    <!-- Google fonts code -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
-    <!-- Link to the p5.js library -->
-    <script language="javascript" type="text/javascript" src="js/p5.js"></script>
-    <script language="javascript" type="text/javascript" src="js/p5.dom.js"></script>
-
-  </head>
-
 
 
   <body>
-    <div class="title">
-      <h3>I want weather of <p><br><input id="city" value="New York"></input> <button id="submit">Search</button></p></h3>
 
+	<footer>
+	<h3>I WANT WEATHER OF<br><br><button id="submit" style="border:none; padding:5px">Search</button><input id="city" value="New York" style="border:none; padding:10px"></input></p>
 
-          <link href="styles.css" rel="stylesheet" type="text/css">
-          <div class="container">
-			<div class="row">
-				<div id="" class="col-8 mx-auto weather">
-					<!-- weather header section -->
-					<div class="weather-head">
-						<h1 id="location" class="text-center display-4">New York</h1>
-						<div class="row">
-							<div id="description" class="description col-6 text-center">
-								<i id="icon-desc" class="wi wi-owm-200"></i>
-								<p class="desc">thunder</p>
-							</div>
-							<div id="temperature" class="col-6 text-center">
-								60 <i id="icon-thermometer" class="wi wi-thermometer"></i>
-							</div>
-						</div>
-						<!-- weather body header -->
-						<div class="weather-body">
-							<div class="row">
-								<div class="humidity col-4 text-center">
-									<i class="wi wi-raindrop"></i><span> Humidity</span>
-								</div>
-								<div class="wind col-4 text-center">
-									<i class="wi wi-strong-wind"></i><span> Wind Speed</span>
-								</div>
-								<div class="visibility col-4 text-center">
-									<i class="fa fa-eye"></i><span> Visibility</span>
-								</div>
-							</div>
-							<!-- weather body data -->
-							<div class="row">
-								<div id="humidity" class="humidity-data col-4 text-center">
-									75%
-								</div>
-								<div id="wind" class="wind-data col-4 text-center">
-									34mph
-								</div>
-								<div id="visibility" class="degree-data col-4 text-center">
-									235
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</div>
-</p>
-   </br>
-
-
-
-   </div>
+	</footer>
   </body>
 </html>
